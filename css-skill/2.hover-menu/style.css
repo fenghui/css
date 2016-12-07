@@ -1,0 +1,65 @@
+body, div, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    background-color: #213034;
+}
+
+.nav > ul {
+    list-style: none;
+}
+
+.nav > ul > li {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    opacity: 0.5;
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+body.home .nav li.home,
+body.goods .nav li.goods,
+body.contents .nav li.contents,
+body.publish .nav li.publish {
+    opacity: 1;
+}
+
+.nav > ul > li:hover {
+    opacity: 1;
+    border-bottom: 2px solid #5ED8C3;
+    transition:opacity 0.4s linear;
+}
+
+.nav-submenu {
+    position: absolute;
+    min-width: 100%;
+    background-color: #213034;
+    display: none;
+    color: #ffffff;
+    left: 0px; /* 父元素的padding距离 */
+}
+
+.nav-submenu > .nav-submenu-item {
+    opacity: 0.5;
+    text-align: center;
+}
+
+.nav > ul > li:hover > .nav-submenu {
+    display: block;
+}
+
+.nav-submenu-item:hover {
+    opacity: 1;
+    transition:opacity 0.4s linear;
+}

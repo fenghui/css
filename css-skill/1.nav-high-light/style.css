@@ -1,0 +1,40 @@
+body, div, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    background-color: #213034;
+}
+
+.nav > ul {
+    list-style: none;
+}
+
+.nav > ul > li {
+    display: inline-block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    opacity: 0.5;
+    border-bottom: 2px solid transparent;
+}
+
+body.home .nav li.home,
+body.goods .nav li.goods,
+body.contents .nav li.contents,
+body.publish .nav li.publish {
+    opacity: 1;
+}
+
+.nav li:hover {
+    opacity: 1;
+    border-bottom: 2px solid #5ED8C3;
+};

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS过渡</title>
+    <style type="text/css">
+        .wrapper {
+            display: table;
+            border-spacing: 20px;
+            width: 100%;
+        }
+
+        .wrapper > div {
+            display: table-cell;
+            width: 20%;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        img:hover {
+            -webkit-transform: scale(1.10);
+        }
+        
+        .transition1 {
+            -webkit-transition: all 1s ease-in-out 0.1s;
+        }
+
+        .transition2 {
+            -webkit-transition: all 1s ease;
+        }
+
+        .transition3 {
+            -webkit-transition: all 1s ease-in;
+        }
+
+        .transition4 {
+            -webkit-transition: all 1s ease-out;
+        }
+
+        .transition5 {
+            -webkit-transition: all 1s linear;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3>css过渡详解</h3>
+        <p>
+            <b>语法:</b> 
+            transition:css属性, 持续时间, 过渡函数，延迟时间
+        </p>
+        <p>
+            <b>示例:</b>
+            <i>transition: all 1s ease 1s</i>
+        </p>
+        <p>
+            <b>注意:</b>
+            transition后面的各个属性之间不需要“,”分隔
+        </p>
+    </div>
+
+    <div class="wrapper">
+        <div>
+            <img class="transition1" src="http://cc.cocimg.com/api/uploads/161107/6fa67aba7251cd539b00ef0c2907f03a.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="transition2" src="http://cc.cocimg.com/api/uploads/161107/6fa67aba7251cd539b00ef0c2907f03a.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="transition3" src="http://cc.cocimg.com/api/uploads/161107/6fa67aba7251cd539b00ef0c2907f03a.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="transition4" src="http://cc.cocimg.com/api/uploads/161107/6fa67aba7251cd539b00ef0c2907f03a.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="transition5" src="http://cc.cocimg.com/api/uploads/161107/6fa67aba7251cd539b00ef0c2907f03a.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
